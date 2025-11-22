@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#section_main {
+width: 100%;
+height: 100vh;
+}
+header {
+height: 10vh;
+width: 100%;
+background-color: white;
+display: flex;
+justify-content: center;
+position: fixed;
+z-index: 5;
+top: 0;
+}
+nav {
+width: 90%;
+display: flex;
+align-items: center;
+justify-content:space-between;
+}
+#logo a {
+font-family: "Knewave",system-ui;
+font-weight: 400;
+font-style: normal;
+font-size: 35pt;
+text-decoration: none;
+
+background: linear-gradient(to right, #F96F71,#CEFF89, #F96FEB);
+background-clip: text;
+box-decoration-break: clone;
+color: transparent;
+display: inline-block;
+}
+ul{
+display: flex;
+align-items: center;
+margin-right: 100px;
+}
+li {
+margin: 20px;
+list-style: none;
+}
+li a {
+font-family: "Roboto", sans-serif;
+font-size:25pt;
+font-weight: 300;
+text-decoration: none;
+color: #939090;
+}
+main {
+position: relative;
+}
+main>img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#main_picture {
+position: absolute;
+width: 600px;
+height: 450px;
+border-radius: 60px;
+overflow: hidden;
+top: 200px;
+left: 410px;
+z-index: 2;
+}
+
+#main_shadow {
+position: absolute;
+width: 650px;
+height: 470px;
+background-color:#E9F1B2;
+border-radius: 60px;
+top: 140px;
+left: 460px;
+z-index: 1;
+}
+#quote {
+position: absolute;
+width: 452px;
+height: 320px;
+background-color: #fff;
+border-radius: 60px;
+position: absolute;
+top: 440px;
+left: 250px;
+z-index: 3;
+box-shadow: 3px 3px 10px
+10px rgb(201, 191, 191);
+padding-top: 20px;
+}
+.text {
+height: 70%;
+}
+#but {
+height: 30%;
+width: 452px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#quote p {
+font-size: 40pt;
+margin-top: 0;
+margin-bottom: 0;
+}
+#text_quote1 {
+
+font-family: "Roboto", sans-
+serif;
+
+font-style: italic;
+text-align: center;
+}
+#text_quote2 {
+
+font-family: "Roboto", sans-serif;
+
+color: #E9F1B2;
+margin-left: 20px;
+}
+button {
+width: 362px;
+height: 91px;
+background-color: #FCB205;
+border: none;
+border-radius: 30px;
+font-size: 35pt;
+color: #fff;
+
+font-family: "Roboto", sans-serif;
+
+font-weight: 600;
+}
+
+/* Секція з турами
+#section_content {
+width: 100%;
+height: 120vh;
+padding: 100px;
+background-image: url(./image/background.jpg);
+background-repeat: no-repeat; */
+/* }
+#separator {
+height: 8vh;
+width: 100%;
+}
+#header {
+height: 7vh;
+width: 100%;
+}
+#header p {
+font-family: "Roboto", sans-serif;
+font-size: 40pt;
+margin:0;
+text-align: center;
+color: black;
+}
+#content {
+height: 85vh;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+#tours {
+width: 80%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+place-items: center;
+gap: 60px;
+}
+.tour {
+width: 230px;
+height: 290px;
+background-color: #4b4848;
+border-radius: 40px;
+display: flex;
+justify-content: center;
+align-items:end
+}
+.tour p {
+font-size: 30pt;
+color:white;
+font-weight:lighter;
+font-family: "Roboto", sans-serif;
+}
+.tour_Hallstatt {
+background-image: url(./image/1.jpg);
+background-repeat: no-repeat;
+}
+.tour_Hallstatt2 {
+background-image: url(./image/2.jpg);
+background-repeat: no-repeat;
+}
+.tour_Rome {
+background-image: url(./image/3.jpg);
+background-repeat: no-repeat;
+}
+.tour_Rome2 {
+background-image: url(./image/4.jpg);
+background-repeat: no-repeat;
+}
+.tour_Dubrovnik {
+background-image: url(./image/5.jpg);
+background-repeat: no-repeat;
+}
+.tour_Dubrovnik2 {
+background-image: url(./image/6.jpg);
+background-repeat: no-repeat;
+}
+.tour_Praha {
+background-image: url(./image/7.jpg);
+background-repeat: no-repeat;
+}
+.tour_Praha2 {
+background-image: url(./image/8.jpg);
+background-repeat: no-repeat;
+}
+.card-label {
+    font-family: "Roboto", serif;
+    font-size: 15pt;
+    font-weight: bold;
+    font-style: italic;
+    color: #000; */
+/*  Секція з турами */
+#section_content {
+width: 100%;
+height: 120vh;
+padding: 100px;
+background-image: url(./image/background.jpg);
+background-repeat: no-repeat;
+text-align: center;
+/* .main-container {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-image: url(./image/background.jpg);
+    background-repeat: no-repeat;
+} */
+
+/* Стилі заголовка */
+.page-title {
+    font-family: "Roboto",sans-serif; /* Шрифт без засічок, як на макеті */
+    font-size: 35pt;
+    font-weight: 900;
+    font-style: italic;
+    color: #000;
+    margin-bottom: 40px;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr); 
+    gap: 40px; 
+    justify-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 300px; 
+    border-radius: 30px; 
+    overflow: hidden;
+    margin-bottom: 15px;
+    transition: transform 0.4s ease;
+}
+
+
+.image-wrapper:hover {
+    transform: scale(1.02);
+}
+
+/* Стилі самого зображення */
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Щоб фото заповнювало картку і не розтягувалось */
+}
+
+/* Підписи під фото */
+.card-label {
+    font-family: "Roboto", serif; /* Шрифт із засічками, як на макеті */
+    font-size: 25pt;
+    font-weight: bold;
+    font-style: italic;
+    color: #000;
+}
+
+/* Секція з контактами
+#section_contacts {
+width: 100%;
+height: 80vh;
+display: flex;
+padding:20px;
+}
+.images_tour {
+height: 80vh;
+width: 35%;
+padding: 30px 30px;
+position: relative;
+}
+.image_riga {
+height: 400px;
+width: 400px;
+border-radius:50%;
+background-image:
+url(./images/riga.jpg);
+background-repeat: no-repeat;
+background-size:cover;
+position: absolute;
+}
+.image_berlin {
+height: 300px;
+width: 300px;
+border-radius:50%;
+background-image:
+url(./images/berlin.jpg);
+background-repeat: no-repeat;
+position: absolute;
+left: 350px;
+top: 50px;
+}
+.image_buda {
+height: 500px;
+width: 500px;
+border-radius:50%;
+background-image:
+url(./images/buda.jpg);
+background-repeat: no-repeat;
+background-size:cover;
+position: absolute;
+left: 100px;
+top: 250px;
+}
+
+.contact_form {
+display: flex;
+height: 80vh;
+width: 65%;
+justify-content: center;
+align-items:center;
+}
+.contact_input {
+width: 700px;
+height: 400px;
+background-color: #0DE2FA;
+border-radius:35px;
+padding: 40px;
+}
+#name_input {
+height: 70px;
+width: 600px;
+border:none;
+margin: 5px;
+}
+.container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 7px;
+}
+#phone_input {
+height: 70px;
+width: 300px;
+border:none;
+margin: 5px;
+}
+#email_input {
+height: 70px;
+width: 280px;
+border:none;
+margin: 5px;
+} */
